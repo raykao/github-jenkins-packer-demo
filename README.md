@@ -6,6 +6,8 @@ It will automatically kick off a build script when the repo gets updated and che
 
 The hook will notify Jenkins and call a build step that will run a shell script which kicks off packer.
 
+Testing now to use the packer jenkins plugin as a post deploy step.
+
 Requirements:
 - GitHub Account
 - Jenkins
