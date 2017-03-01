@@ -4,6 +4,8 @@ This project is designed to demonstrate a basic custom base image work flow for 
 
 It will automatically kick off a build script when the repo gets updated and checked into GitHub.
 
+The hook will notify Jenkins and call a build step that will run a shell script which kicks off packer.
+
 Requirements:
 - GitHub Account
 - Jenkins
