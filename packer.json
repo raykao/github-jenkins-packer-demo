@@ -1,15 +1,15 @@
 {   "variables": {
-        "azure_subscription_id": "{{env 'AZURE_SUBSCRIPTION_ID'}}",
-        "azure_tenant_id": "{{env 'AZURE_TENANT_ID'}}",
-        "azure_client_id": "{{env 'AZURE_CLIENT_ID'}}",
-        "azure_client_secret":"{{env 'AZURE_CLIENT_SECRET'}}"
+        "azure_subscription_id": "{{env `AZURE_SUBSCRIPTION_ID`}}",
+        "azure_tenant_id": "{{env `AZURE_TENANT_ID`}}",
+        "azure_client_id": "{{env `AZURE_CLIENT_ID`}}",
+        "azure_client_secret":"{{env `AZURE_CLIENT_SECRET`}}"
     },
     "builders": [{
         "type": "azure-arm",
-        "subscription_id": "{{user 'azure_subscription_id'}}",
-        "tenant_id": "{{user 'azure_tenant_id'}}",
-        "client_id": "{{user 'azure_client_id'}}",
-        "client_secret": "{{user 'azure_client_secret'}}",
+        "subscription_id": "{{user `azure_subscription_id`}}",
+        "tenant_id": "{{user `azure_tenant_id`}}",
+        "client_id": "{{user `azure_client_id`}}",
+        "client_secret": "{{user `azure_client_secret`}}",
         
         "resource_group_name": "packerdemo",
         "storage_account": "rkvirtualmachines",
