@@ -2,6 +2,7 @@
 
 This project is designed to demonstrate a basic custom base image work flow for Azure VHD Images.
 
+It will automatically kick off a build script when the repo gets updated and checked into GitHub.
 
 Requirements:
 - GitHub Account
