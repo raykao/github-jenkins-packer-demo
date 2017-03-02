@@ -23,5 +23,5 @@ AZURE_CLIENT_SECRET
 ```
 
 ## Jenkins Plugins
-- jenkins-packer
-- github
+- [Packer](https://wiki.jenkins-ci.org/display/JENKINS/Packer+Plugin)
+- [Github](https://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin)
