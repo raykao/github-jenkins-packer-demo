@@ -22,12 +22,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "test" {
-    name     = "terraformtest"
+    name     = "customvmimg-${format("%.4x", base64encode(uuid()))}-rg"
     location = "Canada Central"
 }
 
-resource "azurerm_storage_account" "testsa" {
-    name = "virtualmachinetestsa"
+resource "azurerm_storage_account" "test" {
+    name = "customvmimgsa${format("%.4x", base64encode(uuid()))}"
     resource_group_name = "${azurerm_resource_group.test.name}"
 
     location = "${azurerm_resource_group.test.location}"
@@ -36,4 +36,12 @@ resource "azurerm_storage_account" "testsa" {
     tags {
         environment = "staging"
     }
+}
+
+output "azure_resource_group_name" {
+	value = "${azurerm_resource_group.test.name}"
+}
+
+output "azure_storage_account_name" {
+	value = "${azurerm_storage_account.test.name}"
 }
