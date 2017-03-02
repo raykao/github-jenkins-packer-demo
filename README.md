@@ -12,6 +12,14 @@ Testing now to use the packer jenkins plugin as a post deploy step.
 - GitHub Account
 - Jenkins
 - Packer
-- Azure Subscription with a Storage Account created (used for saving the custom image to)
+- Azure Subscription
+-- Resouce Group and Storage Account created (used for saving the custom image to)
+- Set Environment Variables:
+```
+AZURE_SUBSCRIPTION_ID
+AZURE_TENANT_ID
+AZURE_CLIENT_ID
+AZURE_CLIENT_SECRET
+```
 
 ## Jenkins Plugins
