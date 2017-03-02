@@ -1,3 +1,3 @@
-.azure-credentials.json
+.ENV_VARS
 *.tfstate
 *.tfstate.backup
