@@ -28,12 +28,5 @@
 
         "location": "canadacentral",
         "vm_size": "Standard_DS1_V2"
-    }],
-     "post-processors": [
-        {
-            "type": "manifest",
-            "output": "manifest.json",
-            "strip_path": true
-        }
-      ]
+    }]
 }
